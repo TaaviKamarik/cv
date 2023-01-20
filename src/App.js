@@ -33,12 +33,12 @@ function App() {
 
   return (
     <div className="App">
-      <Card style={{width: "60%", height: "auto", marginTop: "5%", paddingBottom: "10%"}}>
+      <Card style={{width: "60%", height: "auto", marginTop: "5%"}}>
           <Grid container spacing={2}>
               <Grid item xs={12}>
                 <Box sx={{height: "300px", width: "100%", backgroundColor: "#467DEB", display: "flex", justifyContent: "center"}}>
-                    <Box sx={{height: "300px", width: "300px",marginTop: "100px", borderRadius: "150px", outline:  "white solid 10px", overflow: "hidden"}}>
-                        <img alt={""} width={"300px"} height={"300px"} src={taavi}/>
+                    <Box sx={{height: "300px", width: "300px",marginTop: "100px", borderRadius: "150px", outline:  "white solid 10px", overflow: "hidden", display: "flex", justifyContent: "center"}}>
+                        <img alt={""} width={"305px"} height={"305px"} src={taavi}/>
                     </Box>
                 </Box>
               </Grid>
@@ -181,8 +181,9 @@ function App() {
 
               </Grid>
           </Grid>
-
+            <Box height={"100px"} bgcolor={"#467DEB"} marginTop={"100px"}></Box>
       </Card>
+
     </div>
   );
 }
