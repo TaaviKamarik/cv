@@ -1,8 +1,8 @@
 {
-  "name": "taavi-cv",
+  "name": "cv",
   "version": "0.1.0",
-  "homepage": "https://taavikamarik.github.io/taavi-cv",
-  "private": true,
+  "homepage": "https://taavikamarik.github.io/cv",
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
