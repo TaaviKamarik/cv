@@ -176,10 +176,6 @@ function App() {
 
                   </Box>
               </Grid>
-              <Grid item xs={12}>
-
-
-              </Grid>
           </Grid>
             <Box height={"100px"} bgcolor={"#467DEB"} marginTop={"100px"}></Box>
       </Card>
