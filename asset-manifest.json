@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/taavi-cv/static/css/main.d633c6fe.css",
+    "main.js": "/taavi-cv/static/js/main.4d04d1b4.js",
+    "static/js/787.d33bf31f.chunk.js": "/taavi-cv/static/js/787.d33bf31f.chunk.js",
+    "static/media/Taavi.jpg": "/taavi-cv/static/media/Taavi.9c4ec3c5b9a289a25efe.jpg",
+    "static/media/java.png": "/taavi-cv/static/media/java.66d5a4fef00821dfe115.png",
+    "static/media/react.png": "/taavi-cv/static/media/react.b37f0a4b7134b3c99d6e.png",
+    "static/media/js.png": "/taavi-cv/static/media/js.621f6061172a58343b60.png",
+    "static/media/css.png": "/taavi-cv/static/media/css.5491a3b05b4addb59c15.png",
+    "static/media/html.png": "/taavi-cv/static/media/html.397540dec969b31fd37c.png",
+    "index.html": "/taavi-cv/index.html",
+    "main.d633c6fe.css.map": "/taavi-cv/static/css/main.d633c6fe.css.map",
+    "main.4d04d1b4.js.map": "/taavi-cv/static/js/main.4d04d1b4.js.map",
+    "787.d33bf31f.chunk.js.map": "/taavi-cv/static/js/787.d33bf31f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d633c6fe.css",
+    "static/js/main.4d04d1b4.js"
+  ]
+}
