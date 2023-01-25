@@ -17,3 +17,32 @@ body{font-family: 'Poppins', sans-serif;}
     font-weight: 200;
     font-family: 'Poppins', sans-serif;
 }
+
+@media only screen and (max-width: 1500px) {
+    .App .CardClass {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+
+    .App{
+        padding-bottom: 0 !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 950px) {
+    .App .OskusedBox {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 950px) {
+    .App .OskusedNarrow {
+        display: none;
+    }
+
+}
+
+

@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <Card style={{width: "60%", height: "auto", marginTop: "5%"}}>
+      <Card className={"CardClass"} style={{width: "60%", height: "auto", marginTop: "5%"}}>
           <Grid container spacing={2}>
               <Grid item xs={12}>
                 <Box sx={{height: "300px", width: "100%", backgroundColor: "#467DEB", display: "flex", justifyContent: "center"}}>
@@ -95,48 +95,90 @@ function App() {
                       <Divider>OSKUSED</Divider>
                   </Box>
               </Grid>
-              <Grid item xs={6} sx={{display: "flex", justifyContent: "center", flexDirection: "column"}}>
+              <Grid className={"OskusedBox"} item xs={6} sx={{display: "flex", justifyContent: "center", flexDirection: "column"}}>
                   <Box sx={{display: "inline-flex", alignItems: "center", marginLeft: "25%"}}>
                       <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={js}/></Box>
-                      <Box component="span" sx={{width: "150px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>JavaScript</Box>
+                      <Box component="span" sx={{width: "40%", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>JavaScript</Box>
                       <StyledRating name="read-only" value="4" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
 
                   </Box>
                   <Box sx={{display: "inline-flex", alignItems: "center", marginLeft: "25%", marginTop: "20px"}}>
                       <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={java}/></Box>
-                      <Box component="span" sx={{width: "150px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>JAVA</Box>
+                      <Box component="span" sx={{width: "40%", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>JAVA</Box>
                       <StyledRating name="read-only" value="3" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
 
                   </Box>
                   <Box sx={{display: "inline-flex", alignItems: "center", marginLeft: "25%", marginTop: "20px"}}>
                       <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={css}/></Box>
-                      <Box component="span" sx={{width: "150px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>CSS</Box>
+                      <Box component="span" sx={{width: "40%", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>CSS</Box>
                       <StyledRating name="read-only" value="5" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
 
                   </Box>
               </Grid>
               <Divider orientation="vertical" flexItem>
               </Divider>
-              <Grid item xs={5} sx={{display: "flex", justifyContent: "start", flexDirection: "column"}}>
+              <Grid className={"OskusedBox"} item xs={5} sx={{display: "flex", justifyContent: "start", flexDirection: "column"}}>
                   <Box sx={{display: "inline-flex", alignItems: "center" , marginLeft: "25%"}}>
                       <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={html}/></Box>
-                      <Box component="span" sx={{width: "100px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>HTML</Box>
+                      <Box component="span" sx={{width: "30%", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>HTML</Box>
                       <StyledRating name="read-only" value="4" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
 
                   </Box>
                   <Box sx={{display: "inline-flex", alignItems: "center", marginTop: "20px", marginLeft: "25%"}}>
                       <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={react}/></Box>
-                      <Box component="span" sx={{width: "100px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>React</Box>
+                      <Box component="span" sx={{width: "30%", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>React</Box>
                       <StyledRating name="read-only" value="5" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
 
                   </Box>
                   <Box sx={{display: "inline-flex", alignItems: "center", marginTop: "20px", marginLeft: "25%"}}>
                       <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={sharp}/></Box>
-                      <Box component="span" sx={{width: "100px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>C#</Box>
+                      <Box component="span" sx={{width: "30%", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>C#</Box>
                       <StyledRating name="read-only" value="2" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
 
                   </Box>
               </Grid>
+
+              <Grid className={"OskusedNarrow"} item xs={6} sx={{display: "flex", justifyContent: "space-between", flexDirection: "column", marginLeft: "10vw", alignItems: "stretch"}}>
+                  <Box sx={{display: "flex", alignItems: "center", alignContent: "space-between", marginLeft: "auto"}}>
+                      <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={js}/></Box>
+                      <Box component="span" sx={{width: "120px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>JavaScript</Box>
+                      <Box><StyledRating name="read-only" value="4" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly /></Box>
+
+
+                  </Box>
+                  <Box sx={{display: "flex", alignItems: "center", alignContent: "space-between", marginTop: "20px", marginLeft: "auto"}}>
+                      <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={java}/></Box>
+                      <Box component="span" sx={{width: "120px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>JAVA</Box>
+                      <Box sx={{}}><StyledRating name="read-only" value="4" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly /></Box>
+
+
+                  </Box>
+                  <Box sx={{display: "inline-flex", alignItems: "center", marginTop: "20px", marginLeft: "auto"}}>
+                      <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={css}/></Box>
+                      <Box component="span" sx={{width: "120px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>CSS</Box>
+                      <StyledRating name="read-only" value="5" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
+
+                  </Box>
+                  <Box sx={{display: "inline-flex", alignItems: "center" , marginTop: "20px",marginLeft: "auto"}}>
+                      <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={html}/></Box>
+                      <Box component="span" sx={{width: "120px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>HTML</Box>
+                      <StyledRating name="read-only" value="4" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
+
+                  </Box>
+                  <Box sx={{display: "inline-flex", alignItems: "center", marginTop: "20px", marginLeft: "auto"}}>
+                      <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={react}/></Box>
+                      <Box component="span" sx={{width: "120px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>React</Box>
+                      <StyledRating name="read-only" value="5" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
+
+                  </Box>
+                  <Box sx={{display: "inline-flex", marginTop: "20px", marginLeft: "auto"}}>
+                      <Box component="span" sx={{width: "40px", height: "40px"}}> <img alt={""} width={"40px"} height={"40px"} src={sharp}/></Box>
+                      <Box component="span" sx={{width: "120px", fontWeight: "400", marginLeft: "20px", fontSize: "large"}}>C#</Box>
+                      <StyledRating name="read-only" value="2" icon={<LensIcon fontSize="inherit"/>} emptyIcon={<PanoramaFishEyeIcon fontSize="inherit"/>} readOnly />
+
+                  </Box>
+              </Grid>
+
               <Grid item xs={12} sx={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", marginTop: "100px"}}>
                   <Box sx={{width: "80%", marginBottom: "50px"}}>
                       <Divider>KOOLITUSED</Divider>
